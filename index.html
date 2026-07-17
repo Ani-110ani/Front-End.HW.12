@@ -4,25 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homework 12</title>
-    <link rel="stylesheet" href="style.css" />
+    <link href="final.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <img src="images/Earth Icon.svg" alt="Earth Icon" />
-      <h1>my travel journal.</h1>
+    <header
+      class="bg-[#F55A5A] text-white flex justify-center items-center py-4 gap-2"
+    >
+      <img src="images/Earth Icon.svg" alt="Earth Icon" class="w-6 h-6" />
+      <h1 class="text-sm font-medium tracking-tight">my travel journal.</h1>
     </header>
 
-    <main>
-      <article>
-        <img src="images/image 1.png" alt="Mount Fuji" />
-        <div>
-          <div>
-            <span>Japan</span>
-            <a href="#">View on Google Maps</a>
+    <main class="card-container">
+      <article class="card-article">
+        <img src="images/image 1.png" alt="Mount Fuji" class="card-image" />
+        <div class="flex flex-col">
+          <div class="flex items-center mb-1">
+            <svg
+              class="w-[10px] h-[12px] text-[#F55A5A]"
+              fill="currentColor"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <span class="location-text">Japan</span>
+            <a href="#" class="map-link">View on Google Maps</a>
           </div>
-          <h2>Mount Fuji</h2>
-          <p>12 Jan, 2021 - 24 Jan, 2021</p>
-          <p>
+          <h2 class="card-title">Mount Fuji</h2>
+          <p class="card-date">12 Jan, 2021 - 24 Jan, 2021</p>
+          <p class="card-description">
             Mount Fuji is the tallest mountain in Japan, standing at 3,776
             meters (12,380 feet). Mount Fuji is the single most popular tourist
             site in Japan, for both Japanese and foreign tourists.
@@ -30,18 +41,35 @@
         </div>
       </article>
 
-      <hr />
+      <hr class="border-[#F5F5F5]" />
 
-      <article>
-        <img src="images/image 2.png" alt="Sydney Opera House" />
-        <div>
-          <div>
-            <span>Australia</span>
-            <a href="#">View on Google Maps</a>
+      <article class="card-article">
+        <img
+          src="images/image 2.png"
+          alt="Sydney Opera House"
+          class="card-image"
+        />
+        <div class="flex flex-col">
+          <div class="flex items-center mb-1">
+            <svg
+              class="w-[10px] h-[12px] text-[#F55A5A]"
+              fill="currentColor"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <span class="text-[10px] tracking-[0.17em] uppercase"
+              >Australia</span
+            >
+            <a href="#" class="text-[10px] text-[#918E9B] underline ml-3"
+              >View on Google Maps</a
+            >
           </div>
-          <h2>Sydney Opera House</h2>
-          <p>27 May, 2021 - 8 Jun, 2021</p>
-          <p>
+          <h2 class="card-title">Sydney Opera House</h2>
+          <p class="text-[10px] font-bold mb-2">27 May, 2021 - 8 Jun, 2021</p>
+          <p class="text-[10px] leading-[1.5]">
             The Sydney Opera House is a multi-venue performing arts centre in
             Sydney. Located on the banks of the Sydney Harbour, it is often
             regarded as one of the 20th century's most famous and distinctive
@@ -50,18 +78,29 @@
         </div>
       </article>
 
-      <hr />
+      <hr class="border-[#F5F5F5]" />
 
-      <article>
-        <img src="images/image 3.png" alt="Geirangerfjord" />
-        <div>
-          <div>
-            <span>Norway</span>
-            <a href="#">View on Google Maps</a>
+      <article class="card-article">
+        <img src="images/image 3.png" alt="Geirangerfjord" class="card-image" />
+        <div class="flex flex-col">
+          <div class="flex items-center mb-1">
+            <svg
+              class="w-[10px] h-[12px] text-[#F55A5A]"
+              fill="currentColor"
+              viewBox="0 0 384 512"
+            >
+              <path
+                d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+              />
+            </svg>
+            <span class="text-[10px] tracking-[0.17em] uppercase">Norway</span>
+            <a href="#" class="text-[10px] text-[#918E9B] underline ml-3"
+              >View on Google Maps</a
+            >
           </div>
-          <h2>Geirangerfjord</h2>
-          <p>01 Oct, 2021 - 18 Nov, 2021</p>
-          <p>
+          <h2 class="card-title">Geirangerfjord</h2>
+          <p class="text-[10px] font-bold mb-2">01 Oct, 2021 - 18 Nov, 2021</p>
+          <p class="text-[10px] leading-[1.5]">
             The Geiranger Fjord is a fjord in the Sunnmøre region of Møre og
             Romsdal county, Norway. It is located entirely in the Stranda
             Municipality.
