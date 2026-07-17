@@ -261,7 +261,7 @@
   .card-container {
     margin-inline: auto;
     display: flex;
-    max-width: 550px;
+    max-width: calc(var(--spacing) * 137.5);
     flex-direction: column;
     gap: calc(var(--spacing) * 9);
     padding-inline: calc(var(--spacing) * 8);
@@ -274,8 +274,8 @@
     gap: calc(var(--spacing) * 5);
   }
   .card-image {
-    height: 168px;
-    width: 125px;
+    height: calc(var(--spacing) * 42);
+    width: calc(var(--spacing) * 31.25);
     flex-shrink: 0;
     border-radius: 5px;
     object-fit: cover;
@@ -312,8 +312,8 @@
   }
   .card-description {
     font-size: 10px;
-    --tw-leading: 1.5;
-    line-height: 1.5;
+    --tw-leading: var(--leading-normal);
+    line-height: var(--leading-normal);
     color: #2B2829;
   }
 }

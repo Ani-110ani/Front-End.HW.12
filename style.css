@@ -2,7 +2,7 @@
 
 @layer components {
   .card-container {
-    @apply max-w-[550px] mx-auto pt-12 pb-10 px-8 flex flex-col gap-9;
+    @apply max-w-137.5 mx-auto pt-12 pb-10 px-8 flex flex-col gap-9;
   }
 
   .card-article {
@@ -10,7 +10,7 @@
   }
 
   .card-image {
-    @apply w-[125px] h-[168px] object-cover rounded-[5px] flex-shrink-0;
+    @apply w-31.25 h-42 object-cover rounded-[5px] shrink-0;
   }
 
   .location-text {
@@ -30,6 +30,6 @@
   }
 
   .card-description {
-    @apply text-[10px] text-[#2B2829] leading-[1.5];
+    @apply text-[10px] text-[#2B2829] leading-normal;
   }
 }
